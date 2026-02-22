@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="./assets/coding-girl.svg" width="100%" alt="Rabia Sohail - AI Developer"/>
+<img src="./assets/coding-girl.gif" width="420" alt="Coding Girl"/>
+
+<br/>
+
+<img src="./assets/name-banner.svg" width="100%" alt="Rabia Sohail"/>
 
 </div>
 
