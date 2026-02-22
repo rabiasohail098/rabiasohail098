@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#112240"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#64ffda" stop-opacity="0"/>
+      <stop offset="40%"  stop-color="#64ffda" stop-opacity="1"/>
+      <stop offset="60%"  stop-color="#00b4d8" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#64ffda" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#ccd6f6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#8892b0" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="screenGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="subtleGlow" x="-15%" y="-50%" width="130%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="280" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines (professional look) -->
+  <g opacity="0.04" stroke="#64ffda" stroke-width="0.5">
+    <line x1="0" y1="40"  x2="900" y2="40"/>
+    <line x1="0" y1="80"  x2="900" y2="80"/>
+    <line x1="0" y1="120" x2="900" y2="120"/>
+    <line x1="0" y1="160" x2="900" y2="160"/>
+    <line x1="0" y1="200" x2="900" y2="200"/>
+    <line x1="0" y1="240" x2="900" y2="240"/>
+    <line x1="150" y1="0" x2="150" y2="280"/>
+    <line x1="300" y1="0" x2="300" y2="280"/>
+    <line x1="450" y1="0" x2="450" y2="280"/>
+    <line x1="600" y1="0" x2="600" y2="280"/>
+    <line x1="750" y1="0" x2="750" y2="280"/>
+  </g>
+
+  <!-- ═══ LAPTOP (left side) ═══ -->
+  <!-- Laptop screen frame -->
+  <rect x="60" y="50" width="290" height="165" fill="#112240" rx="8" stroke="#233554" stroke-width="2"/>
+  <!-- Screen glass -->
+  <rect x="68" y="58" width="274" height="149" fill="#020c1b" rx="4"/>
+
+  <!-- Screen top bar -->
+  <rect x="68" y="58" width="274" height="18" fill="#0d1b2a" rx="4"/>
+  <circle cx="80" cy="67" r="4" fill="#ff5f57"/>
+  <circle cx="93" cy="67" r="4" fill="#ffbd2e"/>
+  <circle cx="106" cy="67" r="4" fill="#28ca41"/>
+  <!-- address bar -->
+  <rect x="118" y="62" width="140" height="10" fill="#233554" rx="3"/>
+
+  <!-- Code lines on screen -->
+  <g font-family="'Courier New', monospace" font-size="9.5" fill="#8892b0">
+    <!-- line 1 -->
+    <text x="76" y="92"><tspan fill="#64ffda">const</tspan><tspan fill="#ccd6f6"> ai </tspan><tspan fill="#64ffda">=</tspan><tspan fill="#ccd6f6"> new </tspan><tspan fill="#e06c75">AIEmployee</tspan><tspan fill="#ccd6f6">()</tspan></text>
+    <!-- line 2 -->
+    <text x="76" y="106"><tspan fill="#8892b0">// autonomous · 24/7 · platinum</tspan></text>
+    <!-- line 3 -->
+    <text x="76" y="120"><tspan fill="#ccd6f6">ai.</tspan><tspan fill="#61afef">manage</tspan><tspan fill="#ccd6f6">(</tspan><tspan fill="#e5c07b">'emails'</tspan><tspan fill="#ccd6f6">)</tspan></text>
+    <!-- line 4 -->
+    <text x="76" y="134"><tspan fill="#ccd6f6">ai.</tspan><tspan fill="#61afef">post</tspan><tspan fill="#ccd6f6">(</tspan><tspan fill="#e5c07b">'linkedin'</tspan><tspan fill="#ccd6f6">, </tspan><tspan fill="#e5c07b">'twitter'</tspan><tspan fill="#ccd6f6">)</tspan></text>
+    <!-- line 5 -->
+    <text x="76" y="148"><tspan fill="#ccd6f6">ai.</tspan><tspan fill="#61afef">invoice</tspan><tspan fill="#ccd6f6">(</tspan><tspan fill="#e5c07b">'Rs 520,000'</tspan><tspan fill="#ccd6f6">)</tspan></text>
+    <!-- line 6 -->
+    <text x="76" y="162"><tspan fill="#c678dd">await</tspan><tspan fill="#ccd6f6"> ai.</tspan><tspan fill="#61afef">approve</tspan><tspan fill="#ccd6f6">(hitl)</tspan></text>
+    <!-- line 7 - typing -->
+    <text x="76" y="176"><tspan fill="#64ffda">▶</tspan><tspan fill="#8892b0"> Running 7 agents...</tspan></text>
+    <!-- blinking cursor -->
+    <text x="201" y="176" fill="#64ffda" opacity="1">
+      |
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </text>
+    <!-- line 8 faint -->
+    <text x="76" y="190" fill="#3a4a6a">// build something amazing every day</text>
+  </g>
+
+  <!-- Screen subtle glow -->
+  <rect x="68" y="76" width="274" height="131" fill="none" stroke="#64ffda" stroke-width="0.5" rx="2" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Laptop base -->
+  <rect x="48"  y="215" width="314" height="12" fill="#112240" rx="3" stroke="#233554" stroke-width="1"/>
+  <!-- hinge shadow -->
+  <rect x="68"  y="213" width="274" height="4" fill="#0a192f"/>
+  <!-- trackpad -->
+  <rect x="170" y="219" width="70" height="5" fill="#0d1b2a" rx="2"/>
+
+  <!-- Screen glow on desk -->
+  <ellipse cx="205" cy="227" rx="140" ry="6" fill="#64ffda" opacity="0.04"/>
+
+  <!-- ═══ WOMAN FIGURE (right of laptop, professional flat design) ═══ -->
+
+  <!-- Chair back (minimal) -->
+  <rect x="490" y="115" width="8" height="115" fill="#233554" rx="4"/>
+  <rect x="470" y="115" width="48" height="6" fill="#233554" rx="3"/>
+
+  <!-- Body / blazer (professional) -->
+  <path d="M 468 175 Q 455 180 448 195 L 445 245 L 545 245 L 542 195 Q 535 180 522 175 Q 510 170 495 170 Q 480 170 468 175Z" fill="#233554"/>
+  <!-- blazer collar -->
+  <path d="M 480 174 Q 495 188 510 174" fill="#1a2f4a"/>
+  <!-- blazer lapels -->
+  <path d="M 480 174 L 475 200 L 490 192 Z" fill="#1a2f4a"/>
+  <path d="M 510 174 L 515 200 L 500 192 Z" fill="#1a2f4a"/>
+  <!-- shirt/blouse peek -->
+  <path d="M 490 174 Q 495 183 500 174" fill="#ccd6f6" opacity="0.5"/>
+
+  <!-- Neck -->
+  <rect x="489" y="155" width="12" height="18" fill="#e8b4a0" rx="3"/>
+
+  <!-- Head -->
+  <ellipse cx="495" cy="135" rx="28" ry="32" fill="#e8b4a0"/>
+
+  <!-- Hair (long, clearly female, professional dark) -->
+  <!-- Back hair layer -->
+  <path d="M 470 118 Q 462 140 460 170 Q 462 200 467 225 Q 472 210 473 185 Q 474 160 476 138 Z" fill="#2c1a0e"/>
+  <path d="M 520 118 Q 528 140 530 170 Q 528 200 523 225 Q 518 210 517 185 Q 516 160 514 138 Z" fill="#2c1a0e"/>
+  <!-- Hair top -->
+  <ellipse cx="495" cy="112" rx="30" ry="22" fill="#2c1a0e"/>
+  <!-- Side hair flow -->
+  <path d="M 468 125 Q 462 155 462 185 Q 463 175 466 160 Q 469 145 471 130 Z" fill="#2c1a0e"/>
+  <path d="M 522 125 Q 528 155 528 185 Q 527 175 524 160 Q 521 145 519 130 Z" fill="#2c1a0e"/>
+  <!-- Hair highlight -->
+  <path d="M 478 105 Q 495 100 512 105 Q 505 98 495 97 Q 485 98 478 105" fill="#4a2e18" opacity="0.7"/>
+  <!-- Part line -->
+  <path d="M 487 100 Q 495 97 503 100" stroke="#1a0e06" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- Face features -->
+  <!-- Eyebrows (arched, feminine) -->
+  <path d="M 482 122 Q 487 119 492 121" stroke="#2c1a0e" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 498 121 Q 503 119 508 122" stroke="#2c1a0e" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Eyes (professional, focused) -->
+  <ellipse cx="487" cy="130" rx="5.5" ry="5" fill="white"/>
+  <ellipse cx="503" cy="130" rx="5.5" ry="5" fill="white"/>
+  <ellipse cx="487" cy="130" rx="3.5" ry="3.8" fill="#2c1a0e"/>
+  <ellipse cx="503" cy="130" rx="3.5" ry="3.8" fill="#2c1a0e"/>
+  <circle cx="488.5" cy="128.5" r="1.3" fill="white"/>
+  <circle cx="504.5" cy="128.5" r="1.3" fill="white"/>
+  <!-- Eyelid line -->
+  <path d="M 481 127 Q 487 124 493 127" stroke="#2c1a0e" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 497 127 Q 503 124 509 127" stroke="#2c1a0e" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Nose (minimal) -->
+  <path d="M 494 136 Q 495 139 497 136" stroke="#c8957f" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Lips (professional subtle) -->
+  <path d="M 488 145 Q 492 143 496 142 Q 500 143 504 145" stroke="#c8725a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <path d="M 488 145 Q 496 149 504 145" stroke="#b8624a" stroke-width="0.8" fill="#d8826a" fill-opacity="0.3"/>
+
+  <!-- Subtle blush -->
+  <ellipse cx="481" cy="136" rx="6" ry="3.5" fill="#ffaaaa" opacity="0.18"/>
+  <ellipse cx="509" cy="136" rx="6" ry="3.5" fill="#ffaaaa" opacity="0.18"/>
+
+  <!-- Earring (small, professional - pearl style) -->
+  <circle cx="468" cy="135" r="3.5" fill="#e8e0d0" opacity="0.9"/>
+  <circle cx="522" cy="135" r="3.5" fill="#e8e0d0" opacity="0.9"/>
+
+  <!-- Glasses (optional professional touch) -->
+  <rect x="481" y="126" width="11" height="9" fill="none" stroke="#8892b0" stroke-width="1.2" rx="2" opacity="0.5"/>
+  <rect x="497" y="126" width="11" height="9" fill="none" stroke="#8892b0" stroke-width="1.2" rx="2" opacity="0.5"/>
+  <line x1="492" y1="130" x2="497" y2="130" stroke="#8892b0" stroke-width="1.2" opacity="0.5"/>
+  <line x1="481" y1="130" x2="478" y2="131" stroke="#8892b0" stroke-width="1.2" opacity="0.5"/>
+  <line x1="508" y1="130" x2="511" y2="131" stroke="#8892b0" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- LEFT ARM -->
+  <path d="M 455 190 Q 440 215 420 238" stroke="#e8b4a0" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <!-- Left hand typing -->
+  <ellipse cx="418" cy="241" rx="12" ry="7" fill="#e8b4a0"/>
+
+  <!-- RIGHT ARM -->
+  <path d="M 535 190 Q 550 215 570 238" stroke="#e8b4a0" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <!-- Right hand -->
+  <ellipse cx="572" cy="241" rx="12" ry="7" fill="#e8b4a0"/>
+
+  <!-- Small laptop in front of her -->
+  <rect x="420" y="236" width="160" height="10" fill="#1a2f4a" rx="3"/>
+  <rect x="425" y="215" width="150" height="22" fill="#112240" rx="4" stroke="#233554" stroke-width="1"/>
+  <!-- small screen glow -->
+  <rect x="430" y="218" width="140" height="16" fill="#020c1b" rx="2" opacity="0.9"/>
+  <text x="435" y="229" font-family="monospace" font-size="7" fill="#64ffda" opacity="0.8">$ node ai_employee.js</text>
+
+  <!-- ═══ RIGHT SIDE — FLOATING TECH ELEMENTS ═══ -->
+  <g font-family="'Courier New', monospace">
+    <text x="650" y="80" font-size="12" fill="#64ffda" opacity="0.6" filter="url(#subtleGlow)">
+      { AI }
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="720" y="130" font-size="11" fill="#8892b0" opacity="0.5">
+      &lt;/code&gt;
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5s" begin="1s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="5s" begin="1s" repeatCount="indefinite"/>
+    </text>
+    <text x="660" y="190" font-size="11" fill="#61afef" opacity="0.5">
+      npm start
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="6s" begin="0.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-7;0,0" dur="6s" begin="0.5s" repeatCount="indefinite"/>
+    </text>
+    <text x="760" y="95" font-size="10" fill="#c678dd" opacity="0.45">
+      async/await
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="7s" begin="2s" repeatCount="indefinite"/>
+    </text>
+    <text x="780" y="200" font-size="10" fill="#e5c07b" opacity="0.4">
+      deploy ✓
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="5s" begin="1.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="5s" begin="1.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- ═══ NAME & TITLE (center-right, clean) ═══ -->
+  <!-- Name -->
+  <text x="640" y="248"
+        text-anchor="middle"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="34"
+        font-weight="700"
+        letter-spacing="2"
+        fill="#ccd6f6"
+        filter="url(#subtleGlow)">
+    Rabia Sohail
+    <animate attributeName="opacity" values="0.88;1;0.88" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Accent underline -->
+  <rect x="510" y="254" width="260" height="2" fill="url(#accentLine)" rx="1">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Subtitle -->
+  <text x="640" y="272"
+        text-anchor="middle"
+        font-family="'Courier New', monospace"
+        font-size="12"
+        letter-spacing="3"
+        fill="#64ffda">
+    AI Developer  ·  Node.js  ·  Python  ·  Claude AI
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="900" height="3" fill="url(#accentLine)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <!-- Bottom accent line -->
+  <rect x="0" y="277" width="900" height="3" fill="url(#accentLine)">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" begin="2s" repeatCount="indefinite"/>
+  </rect>
+
+</svg>
